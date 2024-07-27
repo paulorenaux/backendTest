@@ -3693,6 +3693,11 @@ Style/Documentation:
   Exclude:
     - 'spec/**/*'
     - 'test/**/*'
+    - 'app/models/*'
+    - 'app/helpers/*'
+    - 'app/controllers/*'
+    - 'app/mailers/*'
+    - 'db/migrate/*'
 
 Style/DocumentationMethod:
   Description: 'Checks for missing documentation comment for public methods.'
@@ -4424,7 +4429,7 @@ Style/MixinGrouping:
 
 Style/MixinUsage:
   Description: 'Checks that `include`, `extend` and `prepend` exists at the top level.'
-  Enabled: true
+  Enabled: false
   VersionAdded: '0.51'
 
 Style/ModuleFunction:

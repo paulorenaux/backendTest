@@ -7,7 +7,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-# fix "ffi-1.17.0-x86_64-linux-musl requires rubygems version >= 3.3.22, which is incompatible with the current version, 3.1.2"
+# fix "ffi-1.17.0-x86_64-linux-musl requires rubygems version >= 3.3.22, which is incompatible with the current version"
 gem 'ffi', '1.16.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.7', '>= 5.0.7.2'
