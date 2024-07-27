@@ -10,6 +10,6 @@
 
 State.create([
                { name: 'Paraná', id: 1 },
-               { name: 'Santa Catarina' },
-               { name: 'Rio Grande do Sul' }
+               { name: 'Santa Catarina', id: 2 },
+               { name: 'Rio Grande do Sul', id: 3 }
              ])
