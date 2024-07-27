@@ -41,6 +41,8 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  # using version 4.1.0 to avoid changing version of `actionpack`
+  gem 'rspec-rails', '4.1.0'
 end
 
 group :development do

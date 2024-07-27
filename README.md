@@ -35,7 +35,7 @@ do Sul
 # Instructions
 
 ## Run the test suite
-TBD
+Run the tests under `spec/` with `bundle exec rspec`.
 
 ## Run the application
 TBD
