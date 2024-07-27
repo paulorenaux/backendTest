@@ -110,7 +110,7 @@ AllCops:
   # the `--enable-true-cops` command-line option.
   # When `NewCops` is `disable`, true cops are disabled in bulk. Can be overridden by
   # the `--disable-true-cops` command-line option.
-  NewCops: true
+  NewCops: enable
   # Enables the result cache if `true`. Can be overridden by the `--cache` command
   # line option.
   UseCache: true
@@ -3177,7 +3177,7 @@ Style/ArrayFirstLast:
 
 Style/ArrayIntersect:
   Description: 'Use `array1.intersect?(array2)` instead of `(array1 & array2).any?`.'
-  Enabled: 'true'
+  Enabled: true
   Safe: false
   VersionAdded: '1.40'
 

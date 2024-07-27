@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AddStateFkToCities < ActiveRecord::Migration[5.0]
   def change
     add_reference :cities, :state, foreign_key: true

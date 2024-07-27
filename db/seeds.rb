@@ -13,12 +13,12 @@ sc = State.create({ name: 'Santa Catarina', id: 2 })
 rs = State.create({ name: 'Rio Grande do Sul', id: 3 })
 
 City.create([
-  { name: 'Curitiba', state: pr},
-  { name: 'Lonrdina', state: pr},
-  { name: 'Maringá', state: pr},
-  { name: 'Florianópolis', state: sc},
-  { name: 'Blumenau', state: sc},
-  { name: 'Joinville', state: sc},
-  { name: 'Porto Alegre', state: rs},
-  { name: 'Pelotas', state: sc}
-])
+              { name: 'Curitiba', state: pr },
+              { name: 'Lonrdina', state: pr },
+              { name: 'Maringá', state: pr },
+              { name: 'Florianópolis', state: sc },
+              { name: 'Blumenau', state: sc },
+              { name: 'Joinville', state: sc },
+              { name: 'Porto Alegre', state: rs },
+              { name: 'Pelotas', state: sc }
+            ])
