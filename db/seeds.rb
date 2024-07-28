@@ -12,13 +12,45 @@ pr = State.create({ name: 'Paraná', id: 1 })
 sc = State.create({ name: 'Santa Catarina', id: 2 })
 rs = State.create({ name: 'Rio Grande do Sul', id: 3 })
 
-City.create([
-              { name: 'Curitiba', state: pr },
-              { name: 'Lonrdina', state: pr },
-              { name: 'Maringá', state: pr },
-              { name: 'Florianópolis', state: sc },
-              { name: 'Blumenau', state: sc },
-              { name: 'Joinville', state: sc },
-              { name: 'Porto Alegre', state: rs },
-              { name: 'Pelotas', state: sc }
-            ])
+%i['Curitiba'
+   'Londrina'
+   'Maringá '
+   'Ponta Grossa'
+   'Cascavel'
+   'São José dos Pinhais'
+   'Foz do Iguaçu'
+   'Colombo '
+   'Guarapuava'
+   'Araucária'].each do |city|
+  City.create({ name: city, state: pr })
+end
+
+%i[
+  'Joinville'
+  'Florianópolis'
+  'Blumenau'
+  'São José'
+  'Itajaí'
+  'Chapecó '
+  'Palhoça'
+  'Criciúma'
+  'Jaraguá do Sul'
+  'Lages'
+].each do |city|
+  City.create({ name: city, state: sc })
+end
+
+%i[
+  'Porto Alegre'
+  'Caxias do Sul'
+  'Canoas'
+  'Pelotas'
+  'Santa Maria'
+  'Gravataí'
+  'Novo Hamburgo'
+  'Viamão'
+  'São Leopoldo '
+  'Passo Fundo'
+].each do |city|
+  City.create({ name: city, state: rs })
+end
