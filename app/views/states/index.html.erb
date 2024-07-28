@@ -1,1 +1,6 @@
 <h1> States index </h1>
+<ul> Listed States:
+<% @states.each do |state| %>
+    <li><%= link_to state.name, state_path(state) %></li>
+<% end %>
+</ul>

@@ -1,0 +1,8 @@
+<h1> <%= @state.name %></h1>
+<input type="text">
+<ol>
+<% @state.cities.each do |city| %>
+    # <li><%= city.name %></li>
+<% end %>
+</ol>
+<%= link_to 'Back to states index', states_path %>
