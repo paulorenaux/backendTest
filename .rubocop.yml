@@ -67,6 +67,7 @@ AllCops:
     - 'tmp/**/*'
     - 'vendor/**/*'
     - '.git/**/*'
+    - '*.erb'
   # Default formatter will be used if no `-f/--format` option is given.
   DefaultFormatter: progress
   # Cop names are displayed in offense messages by default. Change behavior
@@ -2620,6 +2621,7 @@ Metrics/BlockLength:
   AllowedPatterns: []
   Exclude:
     - '**/*.gemspec'
+    - '**/*_spec.rb'
 
 Metrics/BlockNesting:
   Description: 'Avoid excessive block nesting.'
