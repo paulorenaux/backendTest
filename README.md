@@ -25,12 +25,12 @@ do Sul
 
 ## Code quality
 1. Your code should not have any Rubocop complain
+_some adjustments on rubocop are needed to ignore the gems in rails_
 
 ## Deliver
 1. The code should be hosted on Github in a public repository.
 2. The README should contain all instructions to run the test suite.
 3. The README should contain all instructions to run the application.
-4. Reply to this email with the URL from GitHub with your code.
 
 # Instructions
 
@@ -38,4 +38,4 @@ do Sul
 Run the tests under `spec/` with `bundle exec rspec`.
 
 ## Run the application
-TBD
+Start the application with `rails s` or `rails server`.
