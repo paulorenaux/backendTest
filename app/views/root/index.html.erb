@@ -1,0 +1,14 @@
+<h1> States index </h1>
+<ul> Listed States:
+<% @states.each do |state| %>
+    <li><%= state.name %></li>
+<% end %>
+</ul>
+<h2> Search for cities in state </h2>
+<%= form_tag(root_path) do %>
+    <%= text_field_tag :state_name %>
+    <%= text_field_tag :city_name %>
+    <%= submit_tag 'Search' %>
+<% end %>
+<%= @state.name if @state != nil%>
+  
