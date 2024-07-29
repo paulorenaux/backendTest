@@ -3,10 +3,14 @@ default: &default
   adapter: postgresql
   encoding: unicode
   username: postgres
-  password: 'password'
-  host: localhost
+  password: password
+  host: db
 
 development:
   <<: *default
+
+test:
+  <<: *default
   username: paulo
   password: 'admin'
+  host: localhost

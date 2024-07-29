@@ -37,5 +37,23 @@ _some adjustments on rubocop are needed to ignore the gems in rails_
 ## Run the test suite
 Run the tests under `spec/` with `bundle exec rspec`.
 
-## Run the application
+## Run the application locally
 Start the application with `rails s` or `rails server`.
+
+## Run tha application with docker-compose
+```sh
+# create database inside docker-compose environment
+docker-compose run web rails db:create
+
+# run database migrations
+docker-compose run web rails db:migrate
+
+# insert initial values to database (seed)
+docker-compose run web rails db:seed
+
+# (optional) enter console
+# docker-compose run web rails c
+
+# start service
+docker-compose up
+```
