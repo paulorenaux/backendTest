@@ -1,4 +1,6 @@
-<h1> Cities </h1>
+<h1> Search results </h1>
+Searching for cities in <em><%= @state_name %></em> containing <em><%= @partial_city_name %><br /></em>
+Search yielded <em><%= @cities.length %></em> results<br />
 <%= link_to 'back to index', root_path  %>
 <ul>
 <% @cities.each do |city| %>
